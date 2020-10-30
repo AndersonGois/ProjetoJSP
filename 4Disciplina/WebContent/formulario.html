@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="lib/css/estilo.css" />
+<script type="text/javascript" src="lib/js/funcoes.js"></script>
+
 <title>Pagina de formulario</title>
 </head>
 <body>
-	<form action="">
-		CPF: <br /> <input type="text" name="cpf"><br /> Senha: <br />
-		<input type="text" name="senha"><br />
+	<form action="" name="form" onsubmit="validacao(document.form.cpf.value)">
+		CPF: <br /> <input type="text" name="cpf" maxlength="11"><br /> Senha: <br />
+		<input type="password" name="senha"><br />
 		<input type="submit" value="Entrar">
 
 	</form>
